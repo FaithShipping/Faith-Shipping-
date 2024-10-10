@@ -5,142 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Faith Shipping - Envoi de Colis</title>
     <style>
-        /* Styles de base */
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
             color: #333;
+            background-color: #f4f4f4;
         }
-
-        /* Style de l'en-tête */
         header {
             background-color: #8B0000;
             color: white;
-            padding: 20px 0;
+            padding: 15px 0;
             text-align: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         }
-
         header h1 {
             margin: 0;
-            font-size: 2.5em;
         }
-
-        header p {
-            font-style: italic;
-        }
-
-        /* Conteneur principal */
         .container {
             width: 90%;
-            max-width: 900px;
-            margin: 30px auto;
+            max-width: 800px;
+            margin: auto;
             background-color: white;
             padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
         }
-
-        /* Sections */
         section {
-            margin-bottom: 30px;
+            padding: 20px 0;
+            border-bottom: 1px solid #ddd;
         }
-
         h2 {
             color: #8B0000;
-            border-bottom: 2px solid #8B0000;
-            padding-bottom: 5px;
-            margin-bottom: 15px;
         }
-
-        p, ul {
-            line-height: 1.6;
+        .service-image, .logo {
+            width: 100%;
+            max-width: 300px;
+            margin: 20px auto;
+            display: block;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
-
-        ul {
-            padding-left: 20px;
-        }
-
-        ul li {
-            margin-bottom: 8px;
-        }
-
-        /* Style du formulaire de contact */
         .contact-form label {
-            font-weight: bold;
-            margin-top: 10px;
+            display: block;
+            margin: 10px 0 5px;
         }
-
         .contact-form input, .contact-form textarea {
             width: 100%;
-            padding: 12px;
-            margin-top: 8px;
+            padding: 10px;
+            margin-bottom: 10px;
             border: 1px solid #ddd;
             border-radius: 5px;
-            box-sizing: border-box;
-            transition: border-color 0.3s;
         }
-
-        .contact-form input:focus, .contact-form textarea:focus {
-            border-color: #8B0000;
-            outline: none;
-        }
-
         .contact-form button {
             background-color: #8B0000;
             color: white;
             border: none;
-            padding: 12px 20px;
+            padding: 10px 20px;
             border-radius: 5px;
             cursor: pointer;
-            transition: background-color 0.3s, transform 0.3s;
         }
-
         .contact-form button:hover {
             background-color: #a52a2a;
-            transform: scale(1.05);
         }
-
-        /* Informations de contact */
         .contact-info {
             font-size: 1.1em;
-            margin-bottom: 20px;
         }
-
-        /* Pied de page */
         footer {
             text-align: center;
-            padding: 15px;
+            padding: 10px;
             background-color: #333;
-            color: #fff;
-            margin-top: 30px;
-        }
-
-        footer p {
-            margin: 0;
+            color: white;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <!-- En-tête -->
     <header>
+        <img src="https://github.com/FaithShipping/Faith-Shipping-/blob/main/60bc263d-2600-4a11-9d3e-03f6da141af8.jpeg" alt="Faith Shipping Logo" class="logo">
         <h1>Faith Shipping</h1>
         <p>Envoi rapide & sécurisé de colis à l'étranger</p>
     </header>
-
-    <!-- Contenu principal -->
     <div class="container">
-        <!-- Section d'accueil -->
         <section id="accueil">
             <h2>Bienvenue chez Faith Shipping</h2>
             <p>Nous offrons un service d'envoi express avec assurance colis et des tarifs compétitifs pour vos envois entre la France et le Bénin.</p>
         </section>
-
-        <!-- Section des services -->
         <section id="services">
             <h2>Nos Services</h2>
+            <img src="https://github.com/FaithShipping/Faith-Shipping-/blob/main/IMG_3637.jpeg" alt="Service Image" class="service-image">
             <p>Lieux de dépôt et de réception :</p>
             <ul>
                 <li><strong>France :</strong> Île-de-France, Caen, Hérouville, ou envoi par poste</li>
@@ -152,14 +104,10 @@
                 <li>France ➔ Bénin : 20 €/kg</li>
             </ul>
         </section>
-
-        <!-- Section des départs réguliers -->
         <section id="prochains-departs">
             <h2>Départs Réguliers</h2>
             <p>Nous organisons des départs réguliers entre le Bénin et la France. Contactez-nous pour connaître les prochaines dates disponibles et réserver votre envoi.</p>
         </section>
-
-        <!-- Section de contact -->
         <section id="contact">
             <h2>Contactez-nous</h2>
             <p class="contact-info">
@@ -170,18 +118,14 @@
             <form class="contact-form" action="https://formspree.io/f/mrbgzvdz" method="POST">
                 <label for="email">Email :</label>
                 <input type="email" id="email" name="email" required>
-
                 <label for="message">Message :</label>
                 <textarea id="message" name="message" rows="4" required></textarea>
-
                 <button type="submit">Envoyer</button>
             </form>
         </section>
     </div>
-
-    <!-- Pied de page -->
     <footer>
-        <p>&copy; 2024 Faith Shipping. Tous droits réservés.</p>
+        © 2024 Faith Shipping. Tous droits réservés.
     </footer>
 </body>
 </html>

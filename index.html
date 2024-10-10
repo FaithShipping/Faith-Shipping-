@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -6,70 +5,140 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Faith Shipping - Envoi de Colis</title>
     <style>
+        /* Styles de base */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f4f4f4;
             color: #333;
         }
+
+        /* Style de l'en-tête */
         header {
             background-color: #8B0000;
             color: white;
-            padding: 15px 0;
+            padding: 20px 0;
             text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         }
+
         header h1 {
             margin: 0;
+            font-size: 2.5em;
         }
+
+        header p {
+            font-style: italic;
+        }
+
+        /* Conteneur principal */
         .container {
             width: 90%;
-            max-width: 800px;
-            margin: auto;
+            max-width: 900px;
+            margin: 30px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
         }
+
+        /* Sections */
         section {
-            padding: 20px 0;
-            border-bottom: 1px solid #ddd;
+            margin-bottom: 30px;
         }
+
         h2 {
             color: #8B0000;
+            border-bottom: 2px solid #8B0000;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
         }
+
+        p, ul {
+            line-height: 1.6;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 8px;
+        }
+
+        /* Style du formulaire de contact */
         .contact-form label {
-            display: block;
-            margin: 10px 0 5px;
+            font-weight: bold;
+            margin-top: 10px;
         }
+
         .contact-form input, .contact-form textarea {
             width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
+            padding: 12px;
+            margin-top: 8px;
             border: 1px solid #ddd;
             border-radius: 5px;
+            box-sizing: border-box;
+            transition: border-color 0.3s;
         }
+
+        .contact-form input:focus, .contact-form textarea:focus {
+            border-color: #8B0000;
+            outline: none;
+        }
+
         .contact-form button {
             background-color: #8B0000;
             color: white;
             border: none;
-            padding: 10px 20px;
+            padding: 12px 20px;
             border-radius: 5px;
             cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
         }
+
         .contact-form button:hover {
             background-color: #a52a2a;
+            transform: scale(1.05);
         }
+
+        /* Informations de contact */
         .contact-info {
             font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+
+        /* Pied de page */
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #333;
+            color: #fff;
+            margin-top: 30px;
+        }
+
+        footer p {
+            margin: 0;
         }
     </style>
 </head>
 <body>
+    <!-- En-tête -->
     <header>
         <h1>Faith Shipping</h1>
         <p>Envoi rapide & sécurisé de colis à l'étranger</p>
     </header>
+
+    <!-- Contenu principal -->
     <div class="container">
+        <!-- Section d'accueil -->
         <section id="accueil">
             <h2>Bienvenue chez Faith Shipping</h2>
             <p>Nous offrons un service d'envoi express avec assurance colis et des tarifs compétitifs pour vos envois entre la France et le Bénin.</p>
         </section>
+
+        <!-- Section des services -->
         <section id="services">
             <h2>Nos Services</h2>
             <p>Lieux de dépôt et de réception :</p>
@@ -83,10 +152,14 @@
                 <li>France ➔ Bénin : 20 €/kg</li>
             </ul>
         </section>
+
+        <!-- Section des départs réguliers -->
         <section id="prochains-departs">
             <h2>Départs Réguliers</h2>
             <p>Nous organisons des départs réguliers entre le Bénin et la France. Contactez-nous pour connaître les prochaines dates disponibles et réserver votre envoi.</p>
         </section>
+
+        <!-- Section de contact -->
         <section id="contact">
             <h2>Contactez-nous</h2>
             <p class="contact-info">
@@ -94,16 +167,21 @@
                 <strong>Email :</strong> faithshipping229@gmail.com<br>
                 <strong>Réseaux Sociaux :</strong> @faithshipping
             </p>
-    <form action="https://formspree.io/f/mrbgzvdz" method="POST">
-    <label for="email">Email :</label>
-    <input type="email" id="email" name="email" required>
+            <form class="contact-form" action="https://formspree.io/f/mrbgzvdz" method="POST">
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
 
-    <label for="message">Message :</label>
-    <textarea id="message" name="message" rows="4" required></textarea>
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
 
-    <button type="submit">Envoyer</button>
-</form>
+                <button type="submit">Envoyer</button>
+            </form>
         </section>
     </div>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>&copy; 2024 Faith Shipping. Tous droits réservés.</p>
+    </footer>
 </body>
 </html>

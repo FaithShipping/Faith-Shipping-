@@ -41,13 +41,17 @@
         h2 {
             color: #8B0000;
         }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+        }
         .contact-form label {
-            display: block;
-            margin: 10px 0 5px;
+            margin-top: 10px;
         }
         .contact-form input, .contact-form textarea {
-            width: 100%;
+            width: calc(100% - 100px);
             padding: 10px;
+            margin-left: 100px;
             margin-bottom: 10px;
             border: 1px solid #ddd;
             border-radius: 5px;
@@ -59,6 +63,9 @@
             padding: 10px 20px;
             border-radius: 5px;
             cursor: pointer;
+            align-self: flex-start;
+            margin-top: 10px;
+            margin-left: 100px;
         }
         .contact-form button:hover {
             background-color: #a52a2a;
@@ -121,7 +128,7 @@
                 <strong>Email :</strong> faithshipping229@gmail.com<br>
                 <strong>Réseaux Sociaux :</strong> @faithshipping
             </p>
-            <form action="https://formspree.io/f/mrbgzvdz" method="POST">
+            <form class="contact-form" action="https://formspree.io/f/mrbgzvdz" method="POST">
                 <label for="email">Email :</label>
                 <input type="email" id="email" name="email" required>
                 <label for="message">Message :</label>

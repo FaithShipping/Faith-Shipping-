@@ -45,30 +45,33 @@
             display: flex;
             flex-direction: column;
         }
-        .contact-form label {
-            margin-top: 10px;
+        .form-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
         }
-        .contact-form input, .contact-form textarea {
-            width: calc(100% - 100px);
+        .form-group label {
+            width: 100px;
+        }
+        .form-group input, .form-group textarea {
+            flex: 1;
             padding: 10px;
-            margin-left: 100px;
-            margin-bottom: 10px;
             border: 1px solid #ddd;
             border-radius: 5px;
         }
         .contact-form button {
-            background-color: #8B0000;
+            background-color: #0066cc;
             color: white;
             border: none;
             padding: 10px 20px;
             border-radius: 5px;
             cursor: pointer;
-            align-self: flex-start;
             margin-top: 10px;
-            margin-left: 100px;
+            width: 100px;
+            text-align: center;
         }
         .contact-form button:hover {
-            background-color: #a52a2a;
+            background-color: #005bb5;
         }
         .contact-info {
             font-size: 1.1em;
@@ -129,10 +132,14 @@
                 <strong>Réseaux Sociaux :</strong> @faithshipping
             </p>
             <form class="contact-form" action="https://formspree.io/f/mrbgzvdz" method="POST">
-                <label for="email">Email :</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Message :</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
+                <div class="form-group">
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message :</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
                 <button type="submit">Envoyer</button>
             </form>
         </section>
